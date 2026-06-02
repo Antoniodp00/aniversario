@@ -4,7 +4,7 @@ const CACHE = "aniversario-v1";
 
 self.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open(CACHE).then((cache) => cache.addAll(["/", "/index.html"]))
+    caches.open(CACHE).then((cache) => cache.addAll(["./", "./index.html"]))
   );
   self.skipWaiting();
 });
@@ -27,6 +27,6 @@ self.addEventListener("fetch", (e) => {
         }
         return res;
       })
-      .catch(() => caches.match(request).then((r) => r || caches.match("/")))
+      .catch(() => caches.match(request).then((r) => r || caches.match("./")))
   );
 });
