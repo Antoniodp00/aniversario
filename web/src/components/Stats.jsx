@@ -7,24 +7,15 @@ function computeStats() {
   const now = Date.now();
   const days = Math.floor((now - startMs) / (1000 * 60 * 60 * 24));
 
-  const totalMoments = timeline.length;
   const ferias = timeline.filter((e) => /feria/i.test(e.title)).length;
   const escapadas = timeline.filter((e) =>
     /(escapada|vacaciones|granada|nerja|kampaoh)/i.test(e.title)
   ).length;
-  const totalPhotos = timeline.reduce((acc, e) => {
-    if (Array.isArray(e.photos)) return acc + e.photos.length;
-    if (e.photo) return acc + 1;
-    return acc;
-  }, 0);
 
   return [
     { value: days, label: "días juntos" },
-    { value: totalMoments, label: "momentazos" },
     { value: ferias, label: "ferias" },
     { value: escapadas, label: "escapadas" },
-    { value: totalPhotos, label: "fotos guardadas" },
-    { value: "∞", label: "razones para seguir" },
   ];
 }
 

@@ -92,7 +92,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
       >
-        {couple.name1} <span className="font-hand text-rose-500">&amp;</span> {couple.name2}
+        Te Amo
       </motion.h1>
 
       <motion.p
@@ -101,7 +101,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
-        Un año juntos
+        Mi monita
       </motion.p>
 
       <motion.div

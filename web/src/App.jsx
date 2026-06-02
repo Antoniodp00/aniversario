@@ -1,10 +1,10 @@
 import PasswordGate from "./components/PasswordGate";
 import Hero from "./components/Hero";
-import Stats from "./components/Stats";
 import Timeline from "./components/Timeline";
 import MapSection from "./components/MapSection";
+import Passport from "./components/Passport";
 import LovedThings from "./components/LovedThings";
-import Quiz from "./components/Quiz";
+import PhotoWall from "./components/PhotoWall";
 import FutureAdventures from "./components/FutureAdventures";
 import Letter from "./components/Letter";
 import MusicPlayer from "./components/MusicPlayer";
@@ -14,11 +14,11 @@ export default function App() {
     <PasswordGate>
       <main>
         <Hero />
-        <Stats />
         <Timeline />
         <MapSection />
+        <Passport />
         <LovedThings />
-        <Quiz />
+        <PhotoWall />
         <FutureAdventures />
         <Letter />
         <footer className="text-center py-10 text-ink/40 text-sm">

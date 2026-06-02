@@ -81,19 +81,30 @@ export default function MemoryModal({ event, onClose }) {
 
             {/* Carrusel de fotos */}
             {photos.length > 0 && (
-              <div className="relative w-full aspect-[3/2] bg-rose-100 overflow-hidden flex-shrink-0">
+              <div className="relative w-full aspect-[3/2] bg-ink/90 overflow-hidden flex-shrink-0">
                 <AnimatePresence initial={false} mode="wait">
-                  <motion.img
+                  <motion.div
                     key={index}
-                    src={photos[index]}
-                    alt={`${event.title} (${index + 1}/${photos.length})`}
-                    loading="lazy"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.25 }}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
+                    className="absolute inset-0"
+                  >
+                    {/* Fondo difuminado para rellenar los lados de fotos verticales */}
+                    <img
+                      src={photos[index]}
+                      aria-hidden="true"
+                      className="absolute inset-0 w-full h-full object-cover blur-2xl scale-110 opacity-50"
+                    />
+                    {/* Foto completa, sin recortar */}
+                    <img
+                      src={photos[index]}
+                      alt={`${event.title} (${index + 1}/${photos.length})`}
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-contain"
+                    />
+                  </motion.div>
                 </AnimatePresence>
 
                 <div className="absolute top-4 left-4 text-5xl drop-shadow-lg pointer-events-none">

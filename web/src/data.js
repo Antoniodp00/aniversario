@@ -57,10 +57,17 @@ import cruces1 from "./assets/photos/cruces1.jpg";
 import cruces2 from "./assets/photos/cruces2.jpg";
 import cruces3 from "./assets/photos/cruces3.jpg";
 import cruces4 from "./assets/photos/cruces4.jpg";
+import feriaCordoba1 from "./assets/photos/feriaCordoba1.jpg";
+import feriaCordoba2 from "./assets/photos/feriaCordoba2.jpg";
+import feriaCordoba3 from "./assets/photos/feriaCordoba3.jpg";
+import feriaCordoba4 from "./assets/photos/feriaCordoba4.jpg";
+import feriaCordoba5 from "./assets/photos/feriaCordoba5.jpg";
+import feriaCordoba6 from "./assets/photos/feriaCordoba6.jpg";
+import feriaCordoba7 from "./assets/photos/feriaCordoba7.jpg";
 
 export const couple = {
-  name1: "Tú",            // TODO: tu nombre
-  name2: "Ella",          // TODO: su nombre
+  name1: "A",             // inicial para el monograma de arriba
+  name2: "S",             // inicial para el monograma de arriba
   // Fecha y hora exactas en que empezasteis (formato ISO con zona horaria).
   // Si no recuerdas la hora, deja 00:00.
   startDate: "2025-06-07T00:00:00+02:00",
@@ -88,7 +95,6 @@ export const timeline = [
     title: "Notre Dame y la sierra",
     text: "Nuestra primera cita juntos: paseo por Notre Dame y escapada a la sierra.",
     emoji: "⛪",
-    photo: "https://picsum.photos/seed/notredame-sierra/1200/800",
   },
   {
     date: "2025-06-28",
@@ -238,11 +244,17 @@ export const timeline = [
     photos: [cruces1, cruces2, cruces3, cruces4],
   },
   {
+    date: "2026-05-22",
+    title: "Feria de Córdoba",
+    text: "La portada encendida y bailar contigo. Tres noches de feria inolvidables.",
+    emoji: "🎡",
+    photos: [feriaCordoba1, feriaCordoba2, feriaCordoba3, feriaCordoba4, feriaCordoba5, feriaCordoba6, feriaCordoba7],
+  },
+  {
     date: "2026-06-07",
     title: "Un año juntos",
     text: "Y esto es solo el principio.",
     emoji: "💍",
-    photo: "https://picsum.photos/seed/aniversario/1200/800",
   },
 ];
 
@@ -310,31 +322,32 @@ export const gallery = [
 
 // ---- Carta ----------------------------------------------------------------
 export const letter = {
-  greeting: "Mi amor,",
+  greeting: "Mi monita,",
   paragraphs: [
-    "Hace un año que empezó esto y todavía me cuesta creer la suerte que tengo.",
-    "Cada día contigo es una razón nueva para querer que esto siga creciendo.",
-    "Gracias por las risas, por los abrazos largos, por aguantarme en mis días raros, y por hacer que los días normales sean especiales.",
-    "Aquí va este pequeño regalo: un trocito de internet que es solo nuestro. Espero que te guste tanto como me has gustado tú desde el primer día.",
+    "Desde el primer día que te vi en la graduación tuve un sentimiento especial contigo. La primera semana que volvimos a hablar supe que quería tener algo contigo, porque era como si te conociera desde el primer día. El primer mes supe que quería estar a tu lado, y después de este año tengo muy seguro que eres tú la persona con la que quiero compartir el resto de mi vida, por todo lo que me haces sentir y el cómo.",
+    "Además, como ya sabes, mi objetivo es vivir con mi monita, los gatetes y todo lo que venga, jeje. Y que te amo, mi vida. Muchas gracias por todo lo que haces por mí: aguantarme, quererme, reírte de mis pegos, acompañarme en todo y por todos esos momentos que he vivido este último año, que sin ti ni los hubiera vivido, o los hubiera vivido de manera muy diferente. De verdad, amor, es que me haces mejor persona.",
+    "Gracias por acogerme en tu casa. Gracias por los momentos buenos en los que nos reímos, hacemos el bobo, vamos a cenar, vamos al cine, vamos a dar una vuelta al Hipercor a bobear, vemos pelis (bueno, lo intento, jeje), por apoyarme en mis hobbies, esos que me hacen tanta ilusión, y también en los momentos no tan buenos, que también son necesarios para crecer yo mismo como persona y como pareja.",
+    "Y de verdad, gracias por poder hablar contigo de cualquier cosa de buena forma, y entendernos. Amor, me haces mejor persona, y aún lo seré más a tu lado, porque esto solo acaba de comenzar y nos queda toda una vida para vivirla juntos. Y eso me motiva y me encanta, porque ¡coño!, que eres tú, mi monita, y no te cambio por nada ni por nadie, cojones. Mi monita, coño, qué graciosa, buena persona y fogosita es, jeje. Que te amo, cojones, coño y ostia puta. Bueno, no sé por qué insulto, ya estoy delirando, pero lo sigo contando porque no sé, jajajajajaja.",
+    "Y esta aplicación es lo que desde el primer día he querido hacerte. Es la versión súper 2.0 donde veamos todo lo que hemos vivido y todo lo que queda: Disneyland, Japón y muchas, muchas cosas más.",
   ],
-  signature: "Tuyo, siempre.",
+  signature: "Te amo, siempre.",
 };
 
 // ---- Cosas que me encantan de ti -----------------------------------------
 // Aparecen rotando una a una. Añade, quita o reordena.
 export const lovedThings = [
-  "Tu risa cuando algo te hace mucha gracia",
-  "Cómo te emocionas con las cosas pequeñas",
-  "La forma en que me miras cuando piensas que no me doy cuenta",
-  "Tus abrazos cuando estoy de bajón",
-  "Lo bien que hueles siempre",
-  "Que aguantas mis tonterías sin rendirte",
-  "Tu manera de cuidar a la gente que quieres",
-  "Cómo bailas cuando crees que nadie te mira",
-  "Que me haces sentir en casa estés donde estés",
-  "Tu cabezonería, aunque luego me toque a mí",
-  "Cómo te ríes de mis chistes malos",
-  "Tu forma de hacer especial cualquier día",
+  "Cómo me haces mejor persona sin ni siquiera proponértelo",
+  "Que me acogiste en tu casa y en tu vida",
+  "Tu risa cuando hacemos el bobo juntos",
+  "Lo bien que lo pasamos en cualquier plan, hasta dando una vuelta al Hipercor",
+  "Que apoyas mis hobbies y mis ilusiones como si fueran tuyas",
+  "Poder hablar contigo de cualquier cosa, siempre de buena forma",
+  "Que te ríes de mis tonterías y de mis pegos sin rendirte",
+  "Lo graciosa que eres, mi monita",
+  "La buena persona que eres con todo el mundo",
+  "Que estás conmigo también en los momentos no tan buenos",
+  "Imaginar nuestro futuro: la casa, los gatetes y todo lo que venga",
+  "Lo fogosita que eres, jeje",
 ];
 
 // ---- Lugares en el mapa ---------------------------------------------------
@@ -349,6 +362,7 @@ export const places = [
   { name: "Hipercor",              emoji: "🛍️",  coords: [37.8800, -4.7900], note: "Planazo improvisado" },
   { name: "Nerja",                 emoji: "🏖️", coords: [36.7450, -3.8740], note: "Playa, sol y tú" },
   { name: "Granada",               emoji: "🕌",   coords: [37.1773, -3.5986], note: "Semana Santa 2026" },
+  { name: "Córdoba",               emoji: "🎡",   coords: [37.8882, -4.7794], note: "Feria de Córdoba · mayo 2026" },
 ];
 
 // ---- Estadísticas (se calculan automáticamente desde la timeline) --------
@@ -386,14 +400,11 @@ export const quiz = [
 // ---- Próximas aventuras (checklist) --------------------------------------
 // Marca/desmarca tocando — se guarda en el navegador.
 export const futureAdventures = [
-  { id: "viaje-largo",     text: "Hacer un viaje largo juntos" },
-  { id: "festival",         text: "Ir a un festival" },
-  { id: "playa-amanecer",   text: "Ver un amanecer en la playa" },
-  { id: "concierto",        text: "Un concierto de los nuestros" },
-  { id: "casa-rural",       text: "Escapada a una casa rural" },
-  { id: "tatuaje",          text: "Algo simbólico (¿tatuaje?)" },
-  { id: "cocinar",          text: "Cocinar juntos una receta nueva" },
+  { id: "disneyland",       text: "Viaje a Disneyland" },
+  { id: "viaje-largo",      text: "Un viaje largo juntos" },
   { id: "extranjero",       text: "Un viaje fuera de España" },
-  { id: "noche-estrellas",  text: "Una noche viendo las estrellas" },
-  { id: "fotos-polaroid",   text: "Hacernos un álbum de polaroids" },
+  { id: "vivir-juntos",     text: "Vivir juntos" },
+  { id: "juego-juntos",     text: "Pasarnos un juego juntos" },
+  { id: "playa-amanecer",   text: "Ver el amanecer en la playa" },
+  { id: "concierto",        text: "Ir a un concierto" },
 ];
