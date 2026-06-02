@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nuestro aniversario</string>
+    <!-- Pon aquí la URL pública donde despliegues la web (Netlify, GitHub Pages...) -->
+    <string name="web_url">https://aniversario-tuyo.netlify.app</string>
+</resources>

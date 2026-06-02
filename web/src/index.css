@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@500;700&display=swap');
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-cream text-ink font-body antialiased;
+  background-image:
+    radial-gradient(at 20% 10%, rgba(255, 158, 178, 0.25), transparent 50%),
+    radial-gradient(at 80% 90%, rgba(255, 196, 211, 0.2), transparent 50%);
+  background-attachment: fixed;
+  margin: 0;
+}
+
+::selection {
+  background: #ff9fb2;
+  color: #2b1a23;
+}
+
+.section-title {
+  @apply font-display text-4xl md:text-5xl text-rose-700 mb-4;
+}
