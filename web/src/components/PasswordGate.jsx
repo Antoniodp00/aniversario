@@ -11,7 +11,7 @@ const STORAGE_KEY = "aniversario-unlocked";
 const PASSWORD = "monita";   // ← personalízala
 
 const HINTS = [
-  "Te llamo así cuando estamos solos…",
+  "Lo que es mi niña para mí",
   "Pista: es como te llamo yo",
 ];
 
@@ -50,8 +50,8 @@ export default function PasswordGate({ children }) {
         className="max-w-md w-full bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-rose-100"
       >
         <div className="text-6xl mb-4 animate-beat">💌</div>
-        <h1 className="font-display text-3xl text-rose-700 mb-2">Para ti</h1>
-        <p className="text-ink/60 mb-6">Introduce la palabra mágica para entrar</p>
+        <h1 className="font-display text-3xl text-rose-700 mb-2">Amor, ¿tú me quieres?</h1>
+        <p className="text-ink/60 mb-6">Introduce la súper contraseña para entrar</p>
 
         <motion.form
           onSubmit={submit}
