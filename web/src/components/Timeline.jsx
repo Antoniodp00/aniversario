@@ -22,7 +22,7 @@ function Item({ event, index, onOpen }) {
   const isLeft = index % 2 === 0;
   const clickable = hasRealPhoto(event);
 
-  const baseClasses = `w-full max-w-sm h-56 flex flex-col text-left bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 border border-rose-100 ${
+  const baseClasses = `w-full max-w-sm min-h-[14rem] flex flex-col text-left bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 border border-rose-100 ${
     clickable
       ? "cursor-pointer transition-all hover:shadow-2xl hover:-translate-y-1 hover:border-rose-300 focus:outline-none focus:ring-2 focus:ring-rose-400"
       : "cursor-default"
@@ -34,10 +34,10 @@ function Item({ event, index, onOpen }) {
       <div className="text-xs uppercase tracking-widest text-rose-500 mb-1">
         {formatDate(event.date)}
       </div>
-      <h3 className="font-display text-2xl text-rose-700 mb-2 line-clamp-2">
+      <h3 className="font-display text-2xl text-rose-700 mb-2">
         {event.title}
       </h3>
-      <p className="text-ink/70 leading-relaxed line-clamp-2 flex-1">
+      <p className="text-ink/70 leading-relaxed flex-1">
         {event.text}
       </p>
     </>
